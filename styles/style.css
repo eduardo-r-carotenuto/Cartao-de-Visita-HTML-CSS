@@ -111,7 +111,6 @@ strong {
 .rodape{
     padding: 24px;
     color: (var(--cor-primaria)); 
-    background: linear-gradient(to left ,#FFFFFF, #0081FC, #22D4FD);
     text-align: center;
     font-family: 'Prata', serif;
     font-size: 1.5rem;

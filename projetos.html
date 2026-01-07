@@ -1,26 +1,203 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-    <body>
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a class="apresentacao__links_link" href="index.html"> Home </a>
-                <a class="apresentacao__links_link" href="./curriculo.html"> Curriculo</a>
-            </nav>
-        </header>
-        <main>
-            <h1 class="container"> Loading...</h1>
-            <h2 class="casamento irrecusalvel"> <a href="//github.com/eduardo-r-carotenuto/casamento-irrecusavel.git"> Casamento irrecusavel, segue ao lado</a></h2>
-        </main>
-        
-        <footer class="rodape">
-            <p>Desenvolvido por Eduardo Carotenuto.</p>
-        </footer>
-    </body>
-</html>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+/* CARD PRINCIPAL */
+.card {
+  background: #111;
+  color: #fff;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* FOTO */
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00e0ff;
+  margin-bottom: 15px;
+}
+
+/* TEXTOS */
+h1 {
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  color: #00e0ff;
+  margin: 8px 0;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+/* BOTÕES */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.buttons a {
+  flex: 1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #00e0ff;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #00b4cc;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social img {
+  width: 32px;
+}
+
+/* EXPERIÊNCIA */
+.experience {
+  max-width: 700px;
+  width: 100%;
+  color: #fff;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.experience-card h3 {
+  color: #00e0ff;
+}
+
+.experience-card .date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.experience-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+}
+
+/* CARROSSEL */
+.tech-carousel {
+  max-width: 800px;
+  width: 100%;
+  color: #fff;
+}
+
+.tech-carousel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 18s linear infinite;
+}
+
+.tech-card {
+  min-width: 140px;
+  background: #111;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.tech-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  font-weight: bold;
+}
+
+/* ANIMAÇÃO */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 25s;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .tech-card {
+    min-width: 120px;
+  }
+}

@@ -201,3 +201,47 @@ h1 {
     min-width: 120px;
   }
 }
+/* PROJETOS */
+.projects {
+  max-width: 800px;
+  width: 100%;
+  color: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.project-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.project-card h3 {
+  color: #00e0ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.project-card span {
+  font-size: 0.85rem;
+  color: #00e0ff;
+}
+
+/* BOTÃO VOLTAR */
+.back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #00e0ff;
+  font-weight: bold;
+}
+

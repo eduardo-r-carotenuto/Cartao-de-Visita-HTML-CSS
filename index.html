@@ -2,13 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Rocha | Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-  <main class="card">
+<main class="container">
+
+  <!-- CARD PRINCIPAL -->
+  <section class="card">
     <img src="assets/profile.jpg" alt="Foto de Eduardo Rocha" class="profile">
 
     <h1>Eduardo Rocha</h1>
@@ -31,7 +35,7 @@
         <img src="assets/linkedin.png" alt="LinkedIn">
       </a>
     </div>
-  </main>
+  </section>
 
   <!-- EXPERIÊNCIA -->
   <section class="experience">
@@ -39,21 +43,21 @@
 
     <div class="experience-card">
       <h3>Help Desk de TI</h3>
-      <span class="date">12/09/2024 – Atualmente</span>
+      <span>12/09/2024 – Atualmente</span>
 
       <ul>
-        <li>Suporte técnico a usuários (nível 1 e 2)</li>
+        <li>Suporte técnico nível 1 e 2</li>
         <li>Instalação e configuração de softwares</li>
         <li>Suporte ao Windows</li>
         <li>Atendimento remoto e presencial</li>
-        <li>Suporte ao pacote Office 365</li>
-        <li>Controle e organização de ativos de TI</li>
-        <li>Resolução de problemas de hardware e rede</li>
+        <li>Suporte ao Office 365</li>
+        <li>Controle de ativos de TI</li>
+        <li>Problemas de hardware e rede</li>
       </ul>
     </div>
   </section>
 
-
+  <!-- CARROSSEL -->
   <section class="tech-carousel">
     <h2>Tecnologias em Estudo</h2>
 
@@ -80,9 +84,22 @@
           <p>Office 365</p>
         </div>
 
+        <!-- duplicados para loop -->
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+          <p>PostgreSQL</p>
+        </div>
+
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          <p>Python</p>
+        </div>
+
       </div>
     </div>
   </section>
+
+</main>
 
 </body>
 </html>
